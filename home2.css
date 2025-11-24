@@ -1,0 +1,77 @@
+body{
+background-color: white;
+font-family: sans-serif;
+margin: 0;
+padding: 0;
+
+}
+
+h1{
+    color:white;    
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+p{
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 20px 20px 20px;
+    margin: 0;
+}
+
+.navbar{
+    background-color: oklch(44.6% .03 256.802);;
+    padding: 10px;
+    text-align: right;
+}   
+
+.navbar a{
+    color: oklch(87.2% .01 258.338);;
+    text-decoration: none;
+    margin: 0 24px 0 0;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+    
+    
+}
+.button{
+    background-color:#234362;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 35% ;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.hero-image{
+    width: 100%;
+    height: auto;
+}
+.blurbox{
+    background-color: oklch(44.6% .03 256.802);;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: black 0 4px 30px;
+    width: 360px;
+    margin-left: 35%;
+    
+}
+.blurbox p{
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center  ;
+   
+}

@@ -1,61 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<meta charset="UTF-8">
+<title>Achievements</title>
 
-<body>
-    <style>
-        .atas {
-            width: 100%;
-            height: 60px;
-            background: #0a619b;
-            text-align: center;
-            padding-top: 3px;
-            color: white;
-        }
-
-        .text {
-            font-family: Arial, Helvetica, sans-serif;
-            padding-top: 20px;
-            align-items: center;
-            font-size: large;
-            text-align: center
-      
-        }
-
-        .btn{
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #0a619b;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 18px;
-            font-weight: 600;
-            
+<style>
+/* --- GLOBAL STYLE --- */
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background: #f7f7f7;
+  background-color: #ffffff;
 }
-        
-         .button{
-            display: flex;
-            justify-content: center;
-         }
-         .text3{
-              font-family: Arial, Helvetica, sans-serif;
-            padding-top: 20px;
-            align-items: center;
-            font-size: large;
-            text-align: center }
-    </style>
+
+/* --- HIDE RADIO --- */
+.tabs input[type="radio"] {
+  display: none;
+}
+
+/* --- BUTTON WRAPPER --- */
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* --- TAB BUTTON STYLE --- */
+.tab-btn {
+  padding: 10px 20px;
+  background: #e5e5e5;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.tab-btn:hover {
+  background: #d0d0d0;
+}
+
+/* --- ACTIVE BUTTON (CSS ONLY MAGIC!) --- */
+#y2024:checked ~ .tab-buttons label[for="y2024"],
+#y2025:checked ~ .tab-buttons label[for="y2025"],
+#y2026:checked ~ .tab-buttons label[for="y2026"] {
+  background: rgb(110, 78, 68);
+  color: white;
+  border-color: rgb(110, 78, 68);
+  
+  
+}
+
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+#y2024:checked ~ #c2024,
+#y2025:checked ~ #c2025,
+#y2026:checked ~ #c2026 {
+  display: block;
+}
+</style>
+
+</head>
+<body>
+
+<div class="tabs">
+
+  
+  <input type="radio" id="y2024" name="year" checked>
+  <input type="radio" id="y2025" name="year">
+  <input type="radio" id="y2026" name="year">
+
+  <div class="tab-buttons">
+    <label for="y2024" class="tab-btn">2024</label>
+    <label for="y2025" class="tab-btn">2025</label>
+    <label for="y2026" class="tab-btn">2026</label>
+  </div>
+
+  
+  <div class="tab-content" id="c2024">
+    <h2>Achievements 2024</h2>
+    <p>Isi konten tahun 2024...</p>
+  </div>
+
+  <div class="tab-content" id="c2025">
+    <h2>Achievements 2025</h2>
+    <p>Isi konten tahun 2025...</p>
+  </div>
+
+  <div class="tab-content" id="c2026">
+    <h2>Achievements 2026</h2>
+    <p>Isi konten tahun 2026...</p>
+  </div>
+
+</div>
 
 </body>
-<div class="atas"><h2>Achievement</h2></div>
-<div class="text">Celebrating our milestones and successes together</div>
-<div class="button"><a href="achievement.html" class="btn">2024</a></div>
-<div class="button"><a href="2025.html" class="btn">2025</a></div>
-<div class="button"><a href="2026.html" class="btn">2026</a></div>
-<div class="text3">Pengalaman kami tahun 2024</div>
 </html>

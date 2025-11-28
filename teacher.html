@@ -5,8 +5,31 @@
 <title>Data Guru</title>
 
 <style>
-  body { font-family: Arial; background:#eee; padding:20px; }
-  h1 { text-align:center; margin-bottom:15px; }
+  body { font-family: Arial; background:#eee; padding:20px; padding-top:70px; } /* sisakan ruang untuk navbar */
+
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: oklch(44.6% .03 256.802);
+    padding: 10px;
+    text-align: right;
+}   
+
+.navbar a{
+    color: oklch(87.2% .01 258.338);;
+    text-decoration: none;
+    margin: 0 24px 0 0;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+    
+    
+}
+  h1 { text-align:center; margin-bottom:15px;}
 
   .grid {
     display:grid;
@@ -35,8 +58,16 @@
 </head>
 
 <body>
-
+<div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="galery.html">Gallery</a>
+        <a href="teacher.html">Teacher</a>
+        <a href="student.html">student</a>
+        <a href="achievement.html">achievement</a>
+    </div>
+        
 <h1>Data Guru</h1>
+
 
 <div class="grid">
 

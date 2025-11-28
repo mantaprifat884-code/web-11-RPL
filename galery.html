@@ -17,16 +17,28 @@
             background-color: #f7f9fc;
         }
 
-        nav {
-            width: 100%;
-            background-color: #294766;
-            padding: 15px 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
+      .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: oklch(44.6% .03 256.802);
+    padding: 10px;
+    text-align: right;
+}   
 
+.navbar a{
+    color: oklch(87.2% .01 258.338);;
+    text-decoration: none;
+    margin: 0 24px 0 0;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+    
+    
+}
         nav ul {
             display: flex;
             list-style: none;
@@ -127,20 +139,15 @@
 
 </head>
 <body>
-
-    <nav>
-        <div class="logo">
-            <img src="c:\Users\USER\Downloads\Lamborghini_Logo1.png" width="90">
-        </div>
-
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li style="border-bottom:2px solid white; padding-bottom:3px;"><a href="#">Gallery</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Students</a></li>
-            <li><a href="#">Achievements</a></li>
-        </ul>
-    </nav>
+        <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="galery.html">Gallery</a>
+        <a href="teacher.html">Teacher</a>
+        <a href="student.html">student</a>
+        <a href="achievement.html">achievement</a>
+    </div>
+        
+    
 
     <div class="title-section">
         <h1>Gallery car</h1>

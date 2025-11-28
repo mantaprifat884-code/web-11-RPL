@@ -12,17 +12,25 @@
         background: rgb(143, 143, 224);
         height: 1900px;
     }
-   .navbar{
-    background-color: black;
-    height: 90px;
+    .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    position: sticky;
-    top: 0PX;
-   }
+    z-index: 1000;
+    background-color: oklch(44.6% .03 256.802);
+    padding: 10px;
+    text-align: right;
+}   
+.navbar a{
+    color: oklch(87.2% .01 258.338);;
+    text-decoration: none;
+    margin: 0 24px 0 0;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+}
    .card1{
     display: flex;
     flex-direction: column;
@@ -32,7 +40,7 @@
     border-radius: 10px;
     margin-top: 70px;
     width: 400px;
-    margin-left: 30%;
+    margin-left: 35%;
    }
 
    .card2{
@@ -44,7 +52,7 @@
     border-radius: 10px;
     margin-top: 70px;
     width: 400px;
-    margin-left: 30%;
+    margin-left: 35%;
    }
    
    .card3{
@@ -56,7 +64,7 @@
     border-radius: 10px;
     margin-top: 70px;
     width: 400px;
-    margin-left: 30%;
+    margin-left: 35%;
    }
 
    .card4{
@@ -68,7 +76,7 @@
     border-radius: 10px;
     margin-top: 70px;
     width: 400px;
-    margin-left: 30%;
+    margin-left: 35%;
    }
 
    .navbar-title-atas{
@@ -81,7 +89,7 @@
   color: black;              
   padding: 0;                 
   font-size: 35px;
-  margin-left: 8%;
+  margin-left: 17%;
    }
    .unik{
     /* align-items: ; */
@@ -106,7 +114,12 @@
 </style>
 <body>
     <div class="navbar">
-        <h1 class="navbar-title-atas">
+        <a href="home.html">Home</a>
+        <a href="galery.html">Gallery</a>
+        <a href="teacher.html">Teacher</a>
+        <a href="student.html">student</a>
+        <a href="achievement.html">achievement</a>
+    </div>
 STUDENTS AT CLASS XI RPL 1
         </h1>
 </div>
